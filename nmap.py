@@ -13,7 +13,7 @@ import nmap
 import socket
 
 def nmapScan(host, ip, port):
-# Executa um port scan no protocolo TCP no ativo recebido"""
+# Executa um port scan no protocolo TCP no ativo recebido
     try:
         NMAPSCAN = nmap.PortScanner()
         NMAPSCAN.scan(ip, str(port))
