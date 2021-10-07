@@ -29,7 +29,7 @@ def nmapTCP(host, ip, port):
                 + port)
         pass
 
-
+# Executa um port scan no protocolo UDP no ativo recebido
 def nmapUDP(host, ip, port):
     try:
         scanner = nmap.PortScanner()
@@ -49,6 +49,7 @@ ports = input("Porta(s): ")
 ports = ports.split()
 protocolo = input("Qual o protocolo? (Digite \"UDP\" ou \"TCP\"): ")
 
+# Checa se o valor das entradas do usuario esta vazio
 if not host or not ports or not protocolo:
 	print("Voce precisa especificar um alvo, a(s) porta(s) e o protocolo.")
 	exit(0)
